@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.0b5 on win32)" generated="20221027 23:12:15.565" rpa="false" schemaversion="3">
+<suite id="s1" name="Dang Ky" source="c:\Users\NgocPC\Desktop\ĐATN\SalesPizza\TestCases\dang_ky.robot">
+<test id="s1-t1" name="TC_05" line="20">
+<kw name="Mo_Trang_Web" library="common_LLK">
+<arg>http://localhost:81/Shale-PIZZAzzz-master/public/home</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221027 23:12:15.968" level="INFO">Opening browser 'chrome' to base url 'http://localhost:81/Shale-PIZZAzzz-master/public/home'.</msg>
+<status status="PASS" starttime="20221027 23:12:15.968" endtime="20221027 23:12:19.101"/>
+</kw>
+<kw name="Max_Size_Browser" library="common_LLK">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221027 23:12:19.103" endtime="20221027 23:12:19.232"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:19.102" endtime="20221027 23:12:19.233"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:15.967" endtime="20221027 23:12:19.234"/>
+</kw>
+<kw name="Click_Sign_Up" library="dang_ky_LLK">
+<doc>Click vào sign up</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[text()='SIGN UP']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221027 23:12:19.238" endtime="20221027 23:12:19.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[text()='SIGN UP']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 23:12:19.315" level="INFO">Clicking element '//a[text()='SIGN UP']'.</msg>
+<status status="PASS" starttime="20221027 23:12:19.314" endtime="20221027 23:12:19.412"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:19.235" endtime="20221027 23:12:19.413"/>
+</kw>
+<kw name="Input_So_Dien_Thoai" library="dang_ky_LLK">
+<arg>0123456789</arg>
+<doc>Nhập số điện thoại</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@name='nbrPhone']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221027 23:12:19.417" endtime="20221027 23:12:19.483"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@name='nbrPhone']</arg>
+<arg>${phone}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221027 23:12:19.483" level="INFO">Typing password into text field '//input[@name='nbrPhone']'.</msg>
+<msg timestamp="20221027 23:12:19.544" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221027 23:12:19.639" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221027 23:12:19.483" endtime="20221027 23:12:19.639"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:19.415" endtime="20221027 23:12:19.639"/>
+</kw>
+<kw name="Click_Dang_Ky" library="dang_ky_LLK">
+<doc>Click vào nút đăng nhập</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='btnSignup']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221027 23:12:19.642" endtime="20221027 23:12:19.680"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='btnSignup']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221027 23:12:19.681" level="INFO">Clicking element '//button[@id='btnSignup']'.</msg>
+<status status="PASS" starttime="20221027 23:12:19.681" endtime="20221027 23:12:19.758"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:19.640" endtime="20221027 23:12:19.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221027 23:12:22.767" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221027 23:12:19.760" endtime="20221027 23:12:22.768"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221027 23:12:22.771" endtime="20221027 23:12:25.256"/>
+</kw>
+<status status="PASS" starttime="20221027 23:12:15.965" endtime="20221027 23:12:25.259"/>
+</test>
+<status status="PASS" starttime="20221027 23:12:15.572" endtime="20221027 23:12:25.266"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dang Ky">Dang Ky</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
