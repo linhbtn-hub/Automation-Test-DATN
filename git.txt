@@ -3,3 +3,21 @@ commit: Cam kết
 m: Viết tắt của từ message (message: Tin nhắn)
 origin: Nguồn gốc
 push: Đẩy
+
+git status: Kiểm tra trạng thái file
+
+git add: Thêm những file mong muốn vào repository ở local (Hay còn gọi là cái Thùng)
+
+git commit -m "Nhập nội dung tin nhắn tóm tắt"
+
+git push origin master: Đẩy code lên nhánh master
+
+git branch: Kiểm tra nhánh hiện có ở local
+
+git checkout <tên nhánh>: Chuyển đổi nhánh sang <tên nhánh>
+
+git checkout -b <tên nhánh>: Tạo nhánh mới với tên là <tên nhánh>
+
+git branch --delete <tên nhánh>: Xóa nhánh <tên nhánh>
+
+git branch -D <tên nhánh>: Xóa nhánh <tên nhánh> (Tương tự --delete chỉ là câu rút gọn hơn) 
